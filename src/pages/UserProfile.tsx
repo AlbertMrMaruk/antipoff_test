@@ -1,11 +1,4 @@
-// import React from "react";
-// import { UserType } from "../api/UsersAPI.types";
-
-// type UserProfileType = {
-//   user: UserType;
-// };
 import { useParams } from "react-router-dom";
-import Header from "./components/Header";
 import { useEffect } from "react";
 import UsersAPI from "../api/UsersAPI";
 import { SingleUserResponse } from "../api/UsersAPI.types";
@@ -27,6 +20,7 @@ const UserProfile = () => {
           dispatch(setCurrentUser(resp.data));
         });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <main className="w-[100%] h-[100%]">

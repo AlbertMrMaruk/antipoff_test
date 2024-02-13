@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import Field from "./components/Field";
 import BtnSubmit from "./components/BtnSubmit";
 import {

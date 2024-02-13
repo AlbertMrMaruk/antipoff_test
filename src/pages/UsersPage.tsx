@@ -19,6 +19,7 @@ const UsersPage = () => {
       .then((resp: UserListResponse) => {
         dispatch(setUsersList(resp));
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

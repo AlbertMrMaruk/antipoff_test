@@ -40,4 +40,5 @@ class UsersAPI {
   }
 }
 
-export default new UsersAPI();
+const UsersAPIInstance = new UsersAPI();
+export default UsersAPIInstance;
